@@ -221,20 +221,69 @@
 </footer>
 
 <div id="alert-root">
-  <div class="alert-container">
-    <div class="alert">
-      <div class="button-group">
-        This website has been developed and implemented in conjunction with the KGT. By clicking ACCEPT below, you agree to being subject to interminable surveillance, behavioral modification, remote dream transmissions, coercive persuasion, and undisclosed psychological experimentation.
-        <div class="butonlar">
-          <button class="close-btn1">ACCEPT</button>
-          <button class="close-btn2">REJECT</button>
-        </div>
+
+<script type="text/babel">
+    // Alert bileşenini içeren JSX kodu
+    function Windows98Popup({ imageSrc, onClose }) {
+  return (
+    <div className="windows98-popup">
+      <div className="windows98-header">
+        <span></span>
+        <button className="close-btn" onClick={onClose}>X</button>
+      </div>
+      <div className="windows98-body">
+        <img src={imageSrc} alt="Popup Image" />
       </div>
     </div>
-  </div>
-</div>
-   <div class="windows98-popup"><div class="windows98-header"><span></span><button class="close-btn">X</button></div><div class="windows98-body"><img src="tm10vaoxbq6b1.jpg" alt="Popup Image"></div></div>
+  );
+}
 
+function Alert(props) {
+  const [showPopup, setShowPopup] = React.useState(false);
+
+  return (
+    <>
+      {props.open && (
+        <div className='alert-container'>
+          <div className='alert'>
+            <div className="button-group">
+                This website has been developed and implemented in conjunction with the KGT. By clicking ACCEPT below, you agree to being subject to interminable surveillance, behavioral modification, remote dream transmissions, coercive persuasion, and undisclosed psychological experimentation.
+               <div className="butonlar">
+              <button className='close-btn1' onClick={() => props.setPopup(false)}>
+                ACCEPT
+              </button>
+              
+              <button className='close-btn2' onClick={() => { setShowPopup(true); props.setPopup(false); }}>
+                REJECT
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      {showPopup && (
+        <Windows98Popup 
+          imageSrc="tm10vaoxbq6b1.jpg" // Bu yolda gönderdiğiniz resim kullanılacak
+          onClose={() => setShowPopup(false)} 
+        />
+      )}
+    </>
+  );
+}
+
+function App() {
+  const [popup, setPopup] = React.useState(true);
+
+  return (
+    <div>
+      <Alert open={popup} setPopup={setPopup} />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('alert-root'));
+</script>
 
 
 <script src="js/ScrollMagic.min.js"></script>
