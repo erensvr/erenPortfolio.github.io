@@ -569,3 +569,54 @@ form input:last-child {
     height: 1px;
     min-width: 540px;
     }
+    /* 360 derece dönme animasyonu */
+    @keyframes rotate360 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      /* Hover animasyonu */
+      .rotate-on-hover:hover {
+        animation: rotate360 2.5s ease-in-out;
+      }
+
+      /*nav text*/
+      @-webkit-keyframes flicker {
+        0% {
+            opacity: 1
+        }
+      
+        40% {
+            opacity: .8
+        }
+      
+        80% {
+            opacity: .6
+        }
+      
+        to {
+            opacity: 1
+        }
+      }
+      
+      @keyframes flicker {
+        0% {
+            opacity: 1
+        }
+      
+        40% {
+            opacity: .8
+        }
+      
+        80% {
+            opacity: .6
+        }
+      
+        to {
+            opacity: 1
+        }
+      }
