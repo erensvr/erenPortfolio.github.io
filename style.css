@@ -45,7 +45,8 @@
   }
 
   body {
-    
+    margin: 0;
+  padding: 0;
     
     line-height: 1.6;
     background-color: var(--background-color);
@@ -63,7 +64,56 @@
     top: 0;
     z-index: 1000;
   }
-
+ @media (max-width: 1024px) {
+    .container {
+      padding: 20px;
+      font-size: 1rem;
+    }
+  
+    .about-me {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+  
+  /* Mobil cihazlar için */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .about-me {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  
+    .text a {
+      padding: 10px 20px;
+      font-size: 0.7rem;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Küçük ekranlı mobil cihazlar için */
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .text a {
+      padding: 8px 16px;
+      font-size: 0.6rem;
+    }
+  }
 .Logo{
   
   flex-shrink: 0; 
@@ -75,6 +125,12 @@
 .Logo:hover{
   filter: drop-shadow(0 0 0.75rem#9998da);
   transition: filter 0.3s ease;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 nav ul {
   display: flex;
@@ -110,93 +166,6 @@ nav ul li a:hover {
   margin-left: -550px;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 50px; /* Orta boyutlu ekranlarda daha dar bir padding */
-  }
-
-  header {
-    padding: 15px 50px;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .text h1 {
-    font-size: 1.8rem;
-}
-
-.text p {
-    font-size: 0.8rem;
-}
-
-form input:last-child {
-    width: 100%;
-}
-  .container {
-    padding: 0 20px;
-  }
-
-  header {
-    flex-direction: column;
-    padding: 10px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    
-  }
-
-  nav ul li {
-    margin: 5px 0;
-    font-size: 0.9rem;
-  }
-
-  .profile-image img {
-    width: 100%; /* Mobilde resmin genişliği ekrana göre ayarlanır */
-    max-width: 300px;
-  }
-
-  .text h1 {
-    font-size: 2rem; /* Mobilde başlık boyutunu küçült */
-  }
-
-  .text p {
-    font-size: 0.7rem; /* Mobilde paragrafları daha küçük yap */
-  }
-}
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      padding: 20px;
-  }
-
-  nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .main-info-section {
-      padding: 20px;
-  }
-
-  .about-me-info,
-  form input,
-  form textarea {
-      width: 90%;
-  }
-
-  .skills h1 {
-      font-size: 2rem;
-  }
-
-  footer {
-      font-size: 0.9rem;
-  }
-}
 
 
   .navbar {
@@ -220,8 +189,11 @@ form input:last-child {
    }
 
    .main-info-section {
-    height: calc(100vh - 81.6px);
+   height: calc(100vh - 81.6px);
     font-family: Silkscreen;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
    }
 
    .text {
@@ -329,8 +301,8 @@ form input:last-child {
 
 
    .about {
-    height: 100vh;
-    margin-top: 100px;
+     padding: 50px 20px;
+    text-align: center;
    }
 
    .about h1,
