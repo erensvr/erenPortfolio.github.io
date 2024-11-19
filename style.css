@@ -260,16 +260,20 @@ nav ul li a:hover {
      height: auto; 
      margin-right: 115px; 
      margin-top: 50px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
     }  
 
    .profile-image img {
     width: 250px;
     margin-top: 50px;
      width: 100%; /* Resmin genişliğini tam olarak kaplamasını sağla */
+     height: 100%;
+     object-fit: cover;
      border-radius: 10px; /* Köşeleri yumuşatmak için */
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Gölge efekti */
-
-       max-width: 100%; /* Fotoğrafı taşmayacak şekilde sınırla */
+     max-width: 100%; /* Fotoğrafı taşmayacak şekilde sınırla */
   height: auto; /* Yükseklik oranını koru */
   display: block; /* Satır tabanlı hizalamayı sağla */
   margin: 0 auto; /* Ortala */
