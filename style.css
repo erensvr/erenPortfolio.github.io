@@ -36,8 +36,7 @@
     padding: 0 100px 0 100px;
   }
 
-  nav ul,
-  .main-info-section,
+ 
   .work-category {
         display: flex;
         flex-wrap: wrap;
@@ -131,6 +130,11 @@
   filter: drop-shadow(0 0 0.75rem#9998da);
   transition: filter 0.3s ease;
 }
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -166,6 +170,33 @@ nav ul li a:hover {
   font-weight: 900;
   text-shadow: 0 0 15px #9998da;
 }
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Menü düğmesini görünür yap */
+  }
+
+  nav ul {
+      display: none; /* Menü bağlantılarını gizle */
+      flex-direction: column; /* Dikey hizala */
+      background-color: #181818;
+      position: absolute;
+      top: 100%; /* Menü düğmesinin hemen altına yerleştir */
+      width: 100%;
+      left: 0;
+      padding: 0;
+  }
+
+  /* Menü açık olduğunda görünür yap */
+  nav.show ul {
+      display: flex;
+  }
+
+  nav ul li {
+      margin: 0;
+      padding: 10px 20px;
+      text-align: center;
+  }
+}
 #baslik {
   font-family: sans-serif;
   margin-left: -550px;
@@ -173,7 +204,7 @@ nav ul li a:hover {
 
 
 
-  .navbar {
+  #maintop {
     background-color: #181818;
   }
 
