@@ -40,3 +40,7 @@ const showRequiredCategory = (event) => {
     getCategory.classList.add('showCategory');
 };
 
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show'); // 'show' sınıfını ekler veya kaldırır
+}
