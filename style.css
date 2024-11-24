@@ -86,6 +86,15 @@
       font-size: 1.5rem  ;
       text-align: center;
     }
+       .about h1,
+   .work h1 {
+    font-family: sans-serif;
+    font-size: 7rem;
+    z-index: 0;
+   
+    opacity: 1;
+    color: #8382ba;
+   }
   
     .about-me {
       font-size: 0.8rem;
@@ -113,6 +122,15 @@
    h1 {
       font-size: 1.2rem ;
     }
+   .about h1,
+   .work h1 {
+    font-family: sans-serif;
+    font-size: 5rem;
+    z-index: 0;
+   
+    opacity: 1;
+    color: #8382ba;
+   }
   
     .text a {
       padding: 8px 16px;
