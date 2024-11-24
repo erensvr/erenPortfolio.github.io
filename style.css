@@ -73,9 +73,7 @@
       font-size: 2.5rem;
       line-height: 1.5;
     }
-    h1 {
-    font-size: 2.5rem;
-  }
+    
   }
   
   /* Mobil cihazlar için */
@@ -85,7 +83,7 @@
     }
   
     h1 {
-      font-size: 2rem  ;
+      font-size: 1.5rem  ;
       text-align: center;
     }
   
@@ -121,11 +119,7 @@
       font-size: 0.6rem;
     }
   }
-@media (max-width: 360px) {
- h1 {
-    font-size: 1rem; /* Çok küçük ekranlar için */
-  }
-}
+
 .Logo{
   
   flex-shrink: 0; 
