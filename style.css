@@ -70,10 +70,10 @@
     }
   
     .about-me {
-      font-size: 0.9rem;
+      font-size: 2.5rem;
       line-height: 1.5;
     }
-     h1 {
+    .skills, .work, .contact h1 {
     font-size: 2.5rem  !important;
   }
   }
@@ -84,8 +84,8 @@
       padding: 10px;
     }
   
-     h1 {
-      font-size: 0.8rem  !important;
+    .skills, .work, .contact h1 {
+      font-size: 2rem  !important;
       text-align: center;
     }
   
@@ -112,8 +112,8 @@
       padding: 5px;
     }
   
-    h1 {
-      font-size: 0.5rem  !important;
+   .skills, .work, .contact h1 {
+      font-size: 1.2rem  !important;
     }
   
     .text a {
@@ -122,8 +122,8 @@
     }
   }
 @media (max-width: 360px) {
-  h1 {
-    font-size: 0.3rem; /* Çok küçük ekranlar için */
+.skills, .work, .contact  h1 {
+    font-size: 1rem; /* Çok küçük ekranlar için */
   }
 }
 .Logo{
