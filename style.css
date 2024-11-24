@@ -137,7 +137,17 @@
       font-size: 0.6rem;
     }
   }
-
+@media (max-width: 360px) {
+.about h1,
+   .work h1 {
+    font-family: sans-serif;
+    font-size: 4rem;
+    z-index: 0;
+   
+    opacity: 1;
+    color: #8382ba;
+   }
+}
 .Logo{
   
   flex-shrink: 0; 
