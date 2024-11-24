@@ -73,8 +73,8 @@
       font-size: 2.5rem;
       line-height: 1.5;
     }
-    .skills, .work, .contact h1 {
-    font-size: 2.5rem  !important;
+    h1 {
+    font-size: 2.5rem;
   }
   }
   
@@ -84,8 +84,8 @@
       padding: 10px;
     }
   
-    .skills, .work, .contact h1 {
-      font-size: 2rem  !important;
+    h1 {
+      font-size: 2rem  ;
       text-align: center;
     }
   
@@ -112,8 +112,8 @@
       padding: 5px;
     }
   
-   .skills, .work, .contact h1 {
-      font-size: 1.2rem  !important;
+   h1 {
+      font-size: 1.2rem ;
     }
   
     .text a {
@@ -122,7 +122,7 @@
     }
   }
 @media (max-width: 360px) {
-.skills, .work, .contact  h1 {
+ h1 {
     font-size: 1rem; /* Çok küçük ekranlar için */
   }
 }
