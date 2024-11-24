@@ -118,6 +118,11 @@
       font-size: 0.6rem;
     }
   }
+@media (max-width: 360px) {
+  h1 {
+    font-size: 0.3rem; /* Çok küçük ekranlar için */
+  }
+}
 .Logo{
   
   flex-shrink: 0; 
