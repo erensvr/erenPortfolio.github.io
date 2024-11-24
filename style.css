@@ -70,7 +70,7 @@
     }
      .about-me-info h1 {
     color: #be9c21;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: "Source Code Pro",courier;
    }
   
@@ -100,7 +100,7 @@
     }
       .about-me-info h1 {
     color: #be9c21;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: "Source Code Pro",courier;
    }
   
@@ -146,7 +146,7 @@
     }
       .about-me-info h1 {
     color: #be9c21;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: "Source Code Pro",courier;
    }
   
@@ -184,7 +184,7 @@
    }
     .about-me-info h1 {
     color: #be9c21;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: "Source Code Pro",courier;
    }
     
