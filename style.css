@@ -68,11 +68,7 @@
       padding: 20px;
       font-size: 1rem;
     }
-     .about-me-info h1 {
-    color: #be9c21;
-    font-size: 1rem !important;
-    font-family: "Source Code Pro",courier;
-   }
+   
   
     .about-me {
       font-size: 2.5rem;
@@ -98,11 +94,7 @@
     .container {
       padding: 10px;
     }
-      .about-me-info h1 {
-    color: #be9c21;
-    font-size: 1rem !important;
-    font-family: "Source Code Pro",courier;
-   }
+     
   
     .text h1 {
       font-size: 1.5rem  ;
@@ -144,11 +136,7 @@
     .container {
       padding: 5px;
     }
-      .about-me-info h1 {
-    color: #be9c21;
-    font-size: 1rem !important;
-    font-family: "Source Code Pro",courier;
-   }
+     
   
    .text h1 {
       font-size: 1.2rem ;
@@ -182,11 +170,7 @@
     opacity: 1;
     color: #8382ba;
    }
-    .about-me-info h1 {
-    color: #be9c21;
-    font-size: 1rem !important;
-    font-family: "Source Code Pro",courier;
-   }
+   
     
 }
 .Logo{
@@ -460,7 +444,7 @@ nav ul li a:hover {
     color: #bebebe;
   
    }
-   .about-me-info h1 {
+   .about-me-info h2 {
     color: #be9c21;
     font-size: 1rem;
     font-family: "Source Code Pro",courier;
